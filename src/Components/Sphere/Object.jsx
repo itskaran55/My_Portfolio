@@ -58,7 +58,7 @@ export default function Object() {
   }, []);
 
   return (
-    <div className="phs:h-[330px] h-[400px] w-full">
+    <div className="phs:h-[330px] lg:max-h-[280px] lg:max-w-[300px] h-[400px] w-full">
       <Canvas
         gl={{ antialias: true, preserveDrawingBuffer: true }} // Using better WebGL options
         camera={{ position: [0, 0, 6] }}

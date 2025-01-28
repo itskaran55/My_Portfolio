@@ -11,4 +11,16 @@
     border-radius: 10px;    
     top: 18%;
 }
- 
+.backface-hidden {
+    backface-visibility: hidden;
+  }
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .transform-rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  

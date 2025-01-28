@@ -5,6 +5,11 @@
 body {
   background-color: #252C2D;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }

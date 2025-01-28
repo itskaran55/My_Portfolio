@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"], // Include all file types
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"], 
   theme: {
     extend: {
       screens : {
-        phs : {max : '440px'},
+        phs : {max : '540px'},
+        lg: { min: '540px', max: '1200px' },
         sm : '612px',
       },
       colors: {
@@ -14,8 +15,18 @@ module.exports = {
       boxShadow: {
         customInner: 'inset 2px 2px 5px black', 
         customOuter: '2px 2px 5px black',      
-      }
+      },
+      transformOrigin: {
+        center: "center",
+      },
+      perspective: {
+        "1000": "1000px", // Add perspective
+      },
+      rotate: {
+        180: "180deg", // Add 180-degree rotation
+      },
     },
   },
   plugins: [],
+  
 };
