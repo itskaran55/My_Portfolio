@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-scroll";
 import { useNavbar } from './Navbar Context/NavbarContextAPI';
+import myImg from '../../src/KaranIMG.png'
+import myResume from '../../src/Karan’s_Latest_Resume.pdf'
 
 const Home = () => {
     const {isMenuOpen} = useNavbar
@@ -27,10 +29,10 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className="karanimg max-w-[600px] max-h-[600px] phs:max-h-[400px] relative lg:max-h-[300px] lg:max-w-[300px] flex-shrink-0">
-                        <img src="/karanIMG-removebg.png"
+                    <div className="kimg max-w-[600px] max-h-[600px] phs:max-h-[400px] relative lg:max-h-[300px] lg:max-w-[300px] flex-shrink-0">
+                        <img src={myImg}
                             className="imgRem max-w-[550px] max-h-[550px] phs:max-h-[350px] object-cover z-50 relative lg:max-h-[300px] lg:max-w-[300px]"
-                            alt="Dynamic Description">
+                            alt="Karan's IMG">
                         </img>
                         <div className="Object3D absolute inset-0 z-0">
                             <Object />
@@ -38,7 +40,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="resumeBtn text-[1.2em] md:left-[6.5%] md:bottom-[15%] md:absolute phs:relative lg:relative phs:flex phs:items-center phs:justify-center">
-                    <a href='/Karan’s_Latest_Resume.pdf' target="_blank" class="px-6 py-2 rounded-md bg-red-600 text-white font-semibold transition duration-300 hover:bg-red-700 hover:text-gray-200 ">My Resume</a>
+                    <a href={myResume} target="_blank" class="px-6 py-2 rounded-md bg-red-600 text-white font-semibold transition duration-300 hover:bg-red-700 hover:text-gray-200 ">My Resume</a>
                 </div>
                 <div className='findMeSection text-[1.2em] left-[6.5%] bottom-[-15%] md:absolute phs:flex phs:items-center phs:justify-center phs:flex-col phs:my-5 lg:hidden'>
                     <div className="findMeText text-bold text-white">
