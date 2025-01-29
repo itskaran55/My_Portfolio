@@ -19,8 +19,42 @@ const Contact = () => {
         setformData({...formData,[e.target.name]:e.target.value})
     }
 
+    const isValidEmail = (email) => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (!formData.user_name.trim() || !formData.from_name.trim() || !formData.message.trim()) {
+            toast.error('All fields are required!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
+            return;
+        }
+
+        if (!isValidEmail(formData.from_name)) {
+            toast.error('Please Enter Valid Email!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
+            return;
+        }
 
         emailjs.sendForm('service_v74j7me', 'template_rxnnnoh', form.current, 'xhCV3rhrL8U66UMHI')
             .then((result) => {
