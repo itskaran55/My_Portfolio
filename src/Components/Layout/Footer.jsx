@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="phs:flex md:flex md:justify-center md:items-center md:p-[100px] phs:p-[40px] bg-[#1A1C1D]">
       <div className="logoLinks phs:flex w-full md:flex md:justify-center md:align-items-center text-center text-white flex-col lg:flex lg:justify-center lg:items-center">
         <div className="logo">
-          <Link to="home" className='md:flex md:justify-center md:items-center text-white md:text-[2rem] font-bold phs:text-[1.7rem] lg:text-xl cursor-pointer block w-full'><h1>&lt;/&gt; Karan's Portfolio</h1></Link>
+          <Link to="home" className='md:flex md:justify-center md:items-center text-white md:text-[2rem] font-bold phs:text-[1.7rem] lg:text-xl cursor-pointer block w-full'><h1>&lt; Karan's Portfolio /&gt;</h1></Link>
         </div>
         <div className="links flex justify-center align-items-center w-full my-10">
           <ul className='flex phs:flex-col phs:gap-2 phs:text-[1.2rem] justify-between align-items-center w-1/2 lg:flex lg:gap-3'>

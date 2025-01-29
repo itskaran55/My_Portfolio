@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className={`transition-all duration-300 ease-in-out navbar container mx-auto phs:z-[9999] phs:absolute phs:top-[1%]`}>
                 <div className="navbarContent w-100 md:flex md:justify-evenly phs:w-[100%] items-center p-4 phs:flex-col lg:w-full lg:flex lg:justify-between lg:bg-red">
                     <div className="logo text-2xl font-bold phs:flex phs:justify-between phs:w-[100%] phs:align-items-center">
-                        <Link to="home" className='text-white phs:text-[1.5rem] lg:text-xl cursor-pointer'><h1>&lt;/&gt; Karan's Portfolio</h1></Link>
+                        <Link to="home" className='text-white phs:text-[1.5rem] lg:text-xl cursor-pointer'><h1>&lt; Karan's Portfolio /&gt;</h1></Link>
                         <button className={`text-white sm:hidden phs-block`}
                             onClick={toggleNavbar}
                         >
