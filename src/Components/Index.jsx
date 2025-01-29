@@ -4,6 +4,7 @@ import Home from './Home'
 import EducationandExperience from './EducationandExperience'
 import Portfolio from './Portfolio'
 import Skills from './Skills'
+import Contact from './Contact'
 
 const index = () => {
     return (
@@ -13,6 +14,7 @@ const index = () => {
                 <EducationandExperience/>
                 <Portfolio/>
                 <Skills/>
+                <Contact/>
             </CustomLayout>
         </div>
     )

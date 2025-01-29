@@ -14,7 +14,8 @@ module.exports = {
       },
       boxShadow: {
         customInner: 'inset 2px 2px 5px black', 
-        customOuter: '2px 2px 5px black',      
+        customOuter: '2px 2px 5px black',  
+        contactBox : '2px 2px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 15px rgba(122, 116, 116, 0.5)',   
       },
       transformOrigin: {
         center: "center",

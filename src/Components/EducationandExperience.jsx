@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const EducationandExperience = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      offset: 100, // Offset from the top
+      easing: 'ease-in-out', // Easing function
+      mirror: true, // Whether animation should happen only once
+    });
+  }, [])
   const timelineData = [
     {
       date: '2022-2025',
@@ -31,15 +42,15 @@ const EducationandExperience = () => {
     <div id='educationandexperience' className='md:my-[150px] '>
       <div className="titleandData text-center">
         <div className="titles">
-          <div className="mainTitle">
+          <div data-aos="fade-in" className="mainTitle">
             <h1 className='md:text-5xl md:font-bold md:text-white phs:text-3xl phs:text-white phs:font-bold'>My Resume</h1>
           </div>
-          <div className="subtitle md:my-5">
+          <div data-aos="zoom-in" className="subtitle md:my-5">
             <h3 className='md:text-[1.2rem] text-red-700 phs:text-[1.1rem] phs:my-2 phs:font-bold'>"From Classroom to Code"</h3>
           </div>
         </div>
       </div>
-      <div className="myTimeline">
+      <div data-aos="fade-in" className="myTimeline">
         <VerticalTimeline>
           {timelineData.map((event, index) => (
             <VerticalTimelineElement
